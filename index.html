@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="fullx" lang="en">
+<html class="full" lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,17 +24,32 @@
       }
 
       .full {
-        background: url(img/mindmap_interactivecologne.jpg) no-repeat center center fixed; 
+        background: url(img/mindmap_interactivecologne_2.jpg) no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
       }
 
+      a {
+        color: #000;
+        background: transparent;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #000;
+      }
+
+      .backed {
+        background: rgba(255, 255, 255, 0.9)
+      }
+
       .button {
         height: 50px;
         color: 000;
-        padding: 15px;
+        padding: 10px;
       }
 
       .button a {
@@ -42,6 +57,7 @@
         background: transparent;
         font-weight: bold;
         text-decoration: none;
+        display: block;
       }
 
       .button a:hover {
@@ -67,24 +83,26 @@
   </head>
 
   <body>
+    <!--
     <div class="col-md-10 col-md-offset-1" style="position: absolute; z-index: -1;">
       <img src="img/mindmap_interactivecologne.jpg" alt="Interactive Cologne
       2014 Overview" class="img-responsive" />
     </div>
+    -->
 
     <div class="navbar navbar-fixed-bottom navbar-inverse">
       <div class="container">
-        <div class="col-lg-4 text-left button red">
+        <div class="col-md-4 text-left button red">
           <a href="http://2014.interactive-cologne.com">
             VISIT THE INTERACTIVE COLOGNE 2014 WEBSITE!
           </a>
         </div>
-        <div class="col-lg-4 text-center button blue">
+        <div class="col-md-4 text-center button blue">
           <a href="http://2014.interactive-cologne.com/schedule">
             SEE WHOLE SCHEDULE!
           </a>
         </div>
-        <div class="col-lg-4 text-right button yellow">
+        <div class="col-md-4 text-right button yellow">
           <a href="http://2014.interactive-cologne.com/tickets">
             BUY A TICKET!
           </a>
@@ -94,16 +112,16 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 text-right">
+        <div class="col-md-12 text-right">
           SHARE
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <h1><a href="http://2014.interactive-cologne.com">INTERACTIVE COLOGNE FESTIVAL</a></h1>
-          <h2>HACK TECH BIZ CREATIVITY</h2>
-          <h3>19.05.2014 - 25.05.2014</h3>
-          <p class="small">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 class="backed"><a href="http://2014.interactive-cologne.com">INTERACTIVE COLOGNE FESTIVAL</a></h1>
+          <h2 class="backed">HACK TECH BIZ CREATIVITY</h2>
+          <h3 class="backed">19.05.2014 - 25.05.2014</h3>
+          <p class="smallxi backed">
           <a href="http://2014.interactive-cologne.com">INTERACTIVE COLOGNE</a> goes to the next round! After the successful start with
           3,000 participants last year, the festival is to be continued in May 2014.
           INTERACTIVE COLOGNE offers multiple platforms for players in the internet
@@ -117,6 +135,13 @@
           </p>
         </div>
       </div>
+    </div>
+    <div class="row">
+      <div class="container">
+      <div class="col-md-4 col-md-offset-4">
+        <h1 class="backed text-center"><a href="http://this-is.interactive-cologne.com/img/mindmap_interactivecologne.jpg">Full Overview</a></h1>
+      </div>
+    </div>
     </div>
 
 
