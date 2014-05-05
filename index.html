@@ -18,7 +18,7 @@
 
     <style type="text/css">
       body {
-        margin-top: 50px;
+/*        margin-top: 50px; */
         margin-bottom: 50px;
         background: none;
       }
@@ -76,19 +76,39 @@
         background: #eebd11;
       }
 
+      .navbar.top {
+        padding-top: 5px;
+        border-radius: 0;
+        height: 80px;
+      }
+
+      .navbar.top h1 {
+        margin: 0;
+      }
+
       .navbar-fixed-bottom {
         border-width: 0;
+      }
+
+      h1 a.button {
+        height: 800px;
       }
     </style>
   </head>
 
   <body>
-    <!--
-    <div class="col-md-10 col-md-offset-1" style="position: absolute; z-index: -1;">
-      <img src="img/mindmap_interactivecologne.jpg" alt="Interactive Cologne
-      2014 Overview" class="img-responsive" />
+
+    <div class="navbar top navbar-fixed-top navbar-inverse">
+      <div class="container">
+        <div class="col-md-12 text-center button">
+          <h1><a href="http://2014.interactive-cologne.com">
+              INTERACTIVE COLOGNE FESTIVAL -
+              19.05.2014 - 25.05.2014
+            </a>
+          </h1>
+        </div>
+      </div>
     </div>
-    -->
 
     <div class="navbar navbar-fixed-bottom navbar-inverse">
       <div class="container">
@@ -116,7 +136,7 @@
           SHARE
         </div>
       </div>
-      <div class="row text-center">
+      <div class="row text-center" style="display: none">
         <div class="col-md-12">
           <h1 class="backed"><a href="http://2014.interactive-cologne.com">INTERACTIVE COLOGNE FESTIVAL</a></h1>
           <h2 class="backed">HACK TECH BIZ CREATIVITY</h2>
@@ -138,8 +158,12 @@
     </div>
     <div class="row">
       <div class="container">
-      <div class="col-md-4 col-md-offset-4">
-        <h1 class="backed text-center"><a href="http://this-is.interactive-cologne.com/img/mindmap_interactivecologne.jpg">Full Overview</a></h1>
+      <div class="col-md-12">
+        <h1 class="text-center">
+          <a href="http://this-is.interactive-cologne.com/img/mindmap_interactivecologne.jpg" class="col-md-12 button" title="click for full overview">
+            <span style="display: none">Full Overview</span>
+          </a>
+        </h1>
       </div>
     </div>
     </div>
