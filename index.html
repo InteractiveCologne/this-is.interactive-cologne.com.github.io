@@ -19,14 +19,19 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
     <style type="text/css">
+      html {
+        height: 100%;
+      }
+
       body {
 /*        margin-top: 50px; */
         margin-bottom: 50px;
         background: none;
+        height: 100%;
       }
 
       .full {
-        background: url(img/mindmap_interactivecologne_2.jpg) no-repeat center center fixed; 
+        background: url(img/mindmap_interactivecologne_2.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -91,6 +96,22 @@
 
       .navbar.top h1 {
         margin: 0;
+        transition: font-size 0.5s;
+        -webkit-transition: font-size 0.5s;
+        -moz-transition: font-size 0.5s;
+        -o-transition: font-size 0.5s;
+      }
+
+      @media screen and (max-width: 1200px) {
+        .navbar.top h1 {
+          font-size: 25px;
+        }
+      }
+
+      @media screen and (max-width: 470px) {
+        .navbar.top h1 {
+          font-size: 18px;
+        }
       }
 
       .navbar-fixed-bottom {
